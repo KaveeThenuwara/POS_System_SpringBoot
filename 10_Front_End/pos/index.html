@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS PRO | Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+    <div class="brand">
+        <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+        <span>POS PRO</span>
+    </div>
+
+    <nav class="side-nav">
+        <a href="index.html" class="nav-item active"><i class="fas fa-th-large"></i> Dashboard</a>
+        <a href="pages/customer.html" class="nav-item"><i class="fas fa-users"></i> Customers</a>
+        <a href="pages/item.html" class="nav-item"><i class="fas fa-box"></i> Inventory</a>
+        <a href="pages/place-order.html" class="nav-item"><i class="fas fa-shopping-cart"></i> New Order</a>
+    </nav>
+
+    <div class="sidebar-footer">
+        <p>© 2026 POS System</p>
+    </div>
+</aside>
+
+<main class="main-content">
+    <header class="top-bar">
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search transactions...">
+        </div>
+        <div class="user-profile">
+            <span>Admin User</span>
+            <div class="avatar"></div>
+        </div>
+    </header>
+
+    <section class="dashboard-grid">
+        <div class="welcome-banner">
+            <h1>Welcome Back, Admin!</h1>
+            <p>Here is what's happening with your store today.</p>
+        </div>
+
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="stat-icon purple"><i class="fas fa-dollar-sign"></i></div>
+                <div class="stat-info">
+                    <h3>$4,250</h3>
+                    <p>Daily Sales</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon orange"><i class="fas fa-receipt"></i></div>
+                <div class="stat-info">
+                    <h3>48</h3>
+                    <p>Orders</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-grid">
+            <a href="pages/customer.html" class="action-card">
+                <i class="fas fa-user-plus"></i>
+                <span>Add Customer</span>
+            </a>
+            <a href="pages/item.html" class="action-card">
+                <i class="fas fa-plus-circle"></i>
+                <span>New Item</span>
+            </a>
+            <a href="pages/place-order.html" class="action-card featured">
+                <i class="fas fa-cart-arrow-down"></i>
+                <span>Create Sale</span>
+            </a>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
